@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-config_file="${AIONUI_CONFIG_DEV_FILE:-$HOME/.aionui-config-dev/aionui-config.txt}"
+config_file="${BB_CONFIG_DEV_FILE:-$HOME/.bb-config-dev/bb-config.txt}"
 if [[ ! -f "$config_file" ]]; then
     echo "config file not found: $config_file" >&2
     exit 1

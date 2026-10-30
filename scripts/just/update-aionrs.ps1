@@ -6,7 +6,7 @@ $repoRoot = (Resolve-Path (Join-Path $scriptDir "../..")).ProviderPath
 $footerScript = Join-Path $scriptDir "aionrs-changelog-footer.ps1"
 $aionrsRepo = "https://github.com/iOfficeAI/aionrs.git"
 $aionrsSlug = "iOfficeAI/aionrs"
-$aioncoreSlug = "iOfficeAI/AionCore"
+$bbcoreSlug = "iOfficeAI/AionCore"
 
 function Fail($msg) { Write-Error $msg; exit 1 }
 
@@ -82,7 +82,7 @@ if ($LASTEXITCODE -ne 0) {
 # Pin --repo: gh cannot resolve a default repository when multiple GitHub
 # remotes exist (e.g. origin + a contributor fork) unless one was configured
 # via 'gh repo set-default'.
-gh pr create --repo $aioncoreSlug --title "chore(deps): update aionrs to $Tag" --body $prBody --base main --head $branch
+gh pr create --repo $bbcoreSlug --title "chore(deps): update aionrs to $Tag" --body $prBody --base main --head $branch
 if ($LASTEXITCODE -ne 0) {
     Fail "gh pr create failed. Branch '$branch' is already pushed. Create the PR manually with this body:`n`n$prBody"
 }

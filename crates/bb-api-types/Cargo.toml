@@ -1,0 +1,9 @@
+[package]
+name = "bb-api-types"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+bb-common.workspace = true
+serde.workspace = true
+serde_json.workspace = true

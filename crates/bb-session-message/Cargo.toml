@@ -1,0 +1,30 @@
+[package]
+name = "bb-session-message"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+bb-api-types.workspace = true
+bb-common.workspace = true
+bb-conversation.workspace = true
+bb-db.workspace = true
+bb-ai-agent.workspace = true
+bb-project.workspace = true
+bb-realtime.workspace = true
+bb-auth.workspace = true
+async-trait.workspace = true
+axum.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+sqlx.workspace = true
+tokio = { workspace = true, features = ["test-util"] }
+tower.workspace = true
+# Enables the `AgentInstance::Mock` variant so the delivery and e2e tests can
+# build busy fake agents through the trait-object escape hatch instead of
+# spawning real CLIs. Same reason `bb-team` pulls it in.
+bb-ai-agent = { workspace = true, features = ["test-support"] }

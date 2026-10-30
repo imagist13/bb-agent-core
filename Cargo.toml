@@ -1,33 +1,32 @@
 [workspace]
 resolver = "3"
 members = [
-    "crates/aionui-assets",
-    "crates/aionui-common",
-    "crates/aionui-db",
-    "crates/aionui-api-types",
-    "crates/aionui-realtime",
-    "crates/aionui-runtime",
-    "crates/aionui-process",
-    "crates/aionui-session",
-    "crates/aionui-session-message",
-    "crates/aionui-skill-runtime",
-    "crates/aionui-auth",
-    "crates/aionui-system",
-    "crates/aionui-file",
-    "crates/aionui-office",
-    "crates/aionui-shell",
-    "crates/aionui-ai-agent",
-    "crates/aionui-mcp",
-    "crates/aionui-conversation",
-    "crates/aionui-extension",
-    "crates/aionui-channel",
-    "crates/aionui-team-prompts",
-    "crates/aionui-team",
-    "crates/aionui-project",
-    "crates/aionui-sidebar",
-    "crates/aionui-cron",
-    "crates/aionui-assistant",
-    "crates/aionui-app",
+    "crates/bb-assets",
+    "crates/bb-common",
+    "crates/bb-db",
+    "crates/bb-api-types",
+    "crates/bb-realtime",
+    "crates/bb-runtime",
+    "crates/bb-process",
+    "crates/bb-session",
+    "crates/bb-session-message",
+    "crates/bb-skill-runtime",
+    "crates/bb-auth",
+    "crates/bb-system",
+    "crates/bb-file",
+    "crates/bb-shell",
+    "crates/bb-ai-agent",
+    "crates/bb-mcp",
+    "crates/bb-conversation",
+    "crates/bb-extension",
+    "crates/bb-channel",
+    "crates/bb-team-prompts",
+    "crates/bb-team",
+    "crates/bb-project",
+    "crates/bb-sidebar",
+    "crates/bb-cron",
+    "crates/bb-assistant",
+    "crates/bb-app",
 ]
 
 [workspace.package]
@@ -37,33 +36,32 @@ license = "MIT"
 
 [workspace.dependencies]
 # Internal crates
-aionui-common = { path = "crates/aionui-common" }
-aionui-assets = { path = "crates/aionui-assets" }
-aionui-db = { path = "crates/aionui-db" }
-aionui-api-types = { path = "crates/aionui-api-types" }
-aionui-realtime = { path = "crates/aionui-realtime" }
-aionui-runtime = { path = "crates/aionui-runtime" }
-aionui-process = { path = "crates/aionui-process" }
-aionui-session = { path = "crates/aionui-session" }
-aionui-session-message = { path = "crates/aionui-session-message" }
-aionui-skill-runtime = { path = "crates/aionui-skill-runtime" }
-aionui-auth = { path = "crates/aionui-auth" }
-aionui-system = { path = "crates/aionui-system" }
-aionui-file = { path = "crates/aionui-file" }
-aionui-office = { path = "crates/aionui-office" }
-aionui-shell = { path = "crates/aionui-shell" }
-aionui-ai-agent = { path = "crates/aionui-ai-agent" }
-aionui-mcp = { path = "crates/aionui-mcp" }
-aionui-conversation = { path = "crates/aionui-conversation" }
-aionui-extension = { path = "crates/aionui-extension" }
-aionui-channel = { path = "crates/aionui-channel" }
-aionui-team-prompts = { path = "crates/aionui-team-prompts" }
-aionui-team = { path = "crates/aionui-team" }
-aionui-project = { path = "crates/aionui-project" }
-aionui-sidebar = { path = "crates/aionui-sidebar" }
-aionui-cron = { path = "crates/aionui-cron" }
-aionui-assistant = { path = "crates/aionui-assistant" }
-aionui-app = { path = "crates/aionui-app" }
+bb-common = { path = "crates/bb-common" }
+bb-assets = { path = "crates/bb-assets" }
+bb-db = { path = "crates/bb-db" }
+bb-api-types = { path = "crates/bb-api-types" }
+bb-realtime = { path = "crates/bb-realtime" }
+bb-runtime = { path = "crates/bb-runtime" }
+bb-process = { path = "crates/bb-process" }
+bb-session = { path = "crates/bb-session" }
+bb-session-message = { path = "crates/bb-session-message" }
+bb-skill-runtime = { path = "crates/bb-skill-runtime" }
+bb-auth = { path = "crates/bb-auth" }
+bb-system = { path = "crates/bb-system" }
+bb-file = { path = "crates/bb-file" }
+bb-shell = { path = "crates/bb-shell" }
+bb-ai-agent = { path = "crates/bb-ai-agent" }
+bb-mcp = { path = "crates/bb-mcp" }
+bb-conversation = { path = "crates/bb-conversation" }
+bb-extension = { path = "crates/bb-extension" }
+bb-channel = { path = "crates/bb-channel" }
+bb-team-prompts = { path = "crates/bb-team-prompts" }
+bb-team = { path = "crates/bb-team" }
+bb-project = { path = "crates/bb-project" }
+bb-sidebar = { path = "crates/bb-sidebar" }
+bb-cron = { path = "crates/bb-cron" }
+bb-assistant = { path = "crates/bb-assistant" }
+bb-app = { path = "crates/bb-app" }
 
 aion-agent = { git = "https://github.com/iOfficeAI/aionrs.git", tag = "v0.2.11" }
 aion-providers = { git = "https://github.com/iOfficeAI/aionrs.git", tag = "v0.2.11" }
@@ -172,10 +170,6 @@ which = "7"
 # backend on Linux (works under X11/XWayland); macOS/Windows unaffected.
 arboard = { version = "3", default-features = false }
 
-# Office
-calamine = "0.36"
-rust_xlsxwriter = "0.82"
-sha1 = "0.10"
 sha2 = "0.10"
 
 # AWS

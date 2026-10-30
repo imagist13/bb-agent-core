@@ -5,7 +5,7 @@
 
 ### Features
 
-* **conversation:** add aioncore conversation create for agent-driven conversation creation ([#977](https://github.com/iOfficeAI/AionCore/issues/977)) ([23daff5](https://github.com/iOfficeAI/AionCore/commit/23daff534ceb93cfb6371fb5993a383cbbe2e223))
+* **conversation:** add bbcore conversation create for agent-driven conversation creation ([#977](https://github.com/iOfficeAI/AionCore/issues/977)) ([23daff5](https://github.com/iOfficeAI/AionCore/commit/23daff534ceb93cfb6371fb5993a383cbbe2e223))
 
 ## [0.2.1](https://github.com/iOfficeAI/AionCore/compare/v0.2.0...v0.2.1) (2026-09-01)
 
@@ -26,12 +26,12 @@
 
 ### ⚠ BREAKING CHANGES
 
-* **skills:** deliver skills through an AionUi-owned view instead of the workspace ([#938](https://github.com/iOfficeAI/AionCore/issues/938))
+* **skills:** deliver skills through an BBUI-owned view instead of the workspace ([#938](https://github.com/iOfficeAI/AionCore/issues/938))
 
 ### Features
 
 * **auth:** dual-token refresh with singleflight ([#926](https://github.com/iOfficeAI/AionCore/issues/926)) ([3f5c9f9](https://github.com/iOfficeAI/AionCore/commit/3f5c9f900433dd846798a82353df03dfed8db697))
-* **skills:** deliver skills through an AionUi-owned view instead of the workspace ([#938](https://github.com/iOfficeAI/AionCore/issues/938)) ([7032b3b](https://github.com/iOfficeAI/AionCore/commit/7032b3b410440c0081fb3cfe4a09f2ccfb2dd574))
+* **skills:** deliver skills through an BBUI-owned view instead of the workspace ([#938](https://github.com/iOfficeAI/AionCore/issues/938)) ([7032b3b](https://github.com/iOfficeAI/AionCore/commit/7032b3b410440c0081fb3cfe4a09f2ccfb2dd574))
 
 ## [0.1.72](https://github.com/iOfficeAI/AionCore/compare/v0.1.71...v0.1.72) (2026-08-24)
 
@@ -66,13 +66,13 @@
 
 ### Bug Fixes
 
-* **app:** fall back to default log dir when custom log dir is unusable (AIONUI-231) ([#898](https://github.com/iOfficeAI/AionCore/issues/898)) ([a2391ae](https://github.com/iOfficeAI/AionCore/commit/a2391ae68fe3f0408b1ade052031ba458bfcba63))
+* **app:** fall back to default log dir when custom log dir is unusable (BB-231) ([#898](https://github.com/iOfficeAI/AionCore/issues/898)) ([a2391ae](https://github.com/iOfficeAI/AionCore/commit/a2391ae68fe3f0408b1ade052031ba458bfcba63))
 * **claude:** append the assistant preset instead of replacing the system prompt ([#900](https://github.com/iOfficeAI/AionCore/issues/900)) ([b4543b4](https://github.com/iOfficeAI/AionCore/commit/b4543b471b06e3aa1159339dc15e137773a86c27))
 * **codex:** send the assistant preset as developerInstructions, not baseInstructions ([#897](https://github.com/iOfficeAI/AionCore/issues/897)) ([a3d47a9](https://github.com/iOfficeAI/AionCore/commit/a3d47a91de714f6d5b6f2b5339d14b1d84ebfbbd))
 * **conversation:** apply agent session titles at the relay level ([#896](https://github.com/iOfficeAI/AionCore/issues/896)) ([1a2c86a](https://github.com/iOfficeAI/AionCore/commit/1a2c86a8a702aa1d7aa081114da93ac3c734adfc))
-* **extension:** bound the builtin-skills materialize lock acquisition (AIONUI-168) ([#903](https://github.com/iOfficeAI/AionCore/issues/903)) ([b584da0](https://github.com/iOfficeAI/AionCore/commit/b584da01e1608da15438264e34ea506b4d947d95))
-* **project:** keep mounted targets when one fs/subscribe target fails (AIONUI-236) ([#902](https://github.com/iOfficeAI/AionCore/issues/902)) ([2f5edd4](https://github.com/iOfficeAI/AionCore/commit/2f5edd4151ed0d6ce59e8491068c95b0578f5c58))
-* **runtime:** log npm/npx probe stderr and missing-executable snapshot (AIONUI-62) ([#904](https://github.com/iOfficeAI/AionCore/issues/904)) ([9124b20](https://github.com/iOfficeAI/AionCore/commit/9124b2078cdd3f5029553a0a3ee3d177b1b998d9))
+* **extension:** bound the builtin-skills materialize lock acquisition (BB-168) ([#903](https://github.com/iOfficeAI/AionCore/issues/903)) ([b584da0](https://github.com/iOfficeAI/AionCore/commit/b584da01e1608da15438264e34ea506b4d947d95))
+* **project:** keep mounted targets when one fs/subscribe target fails (BB-236) ([#902](https://github.com/iOfficeAI/AionCore/issues/902)) ([2f5edd4](https://github.com/iOfficeAI/AionCore/commit/2f5edd4151ed0d6ce59e8491068c95b0578f5c58))
+* **runtime:** log npm/npx probe stderr and missing-executable snapshot (BB-62) ([#904](https://github.com/iOfficeAI/AionCore/issues/904)) ([9124b20](https://github.com/iOfficeAI/AionCore/commit/9124b2078cdd3f5029553a0a3ee3d177b1b998d9))
 
 ## [0.1.70](https://github.com/iOfficeAI/AionCore/compare/v0.1.69...v0.1.70) (2026-08-19)
 
@@ -277,7 +277,7 @@
 * **file:** strip verbatim \\?\ prefix from non-browse path outputs ([#736](https://github.com/iOfficeAI/AionCore/issues/736)) ([782ddd0](https://github.com/iOfficeAI/AionCore/commit/782ddd083074bec1857a3a9b5bc64852ae525c4f))
 * **process:** reap tool subprocesses that left the process group ([#753](https://github.com/iOfficeAI/AionCore/issues/753)) ([7bc0260](https://github.com/iOfficeAI/AionCore/commit/7bc026006c55a7f38d94f86a44af6d36105284b3))
 * **runtime:** retry transient bundled-node activation copy and reclassify persistent I/O failures ([#760](https://github.com/iOfficeAI/AionCore/issues/760)) ([23d2ec6](https://github.com/iOfficeAI/AionCore/commit/23d2ec658dd3dfda89156f7119945ac3c7141611))
-* **server:** emit AIONCORE_READY marker once serving begins ([#761](https://github.com/iOfficeAI/AionCore/issues/761)) ([8b08130](https://github.com/iOfficeAI/AionCore/commit/8b08130365ec7c883736c0b4aabcef471002dd7b))
+* **server:** emit BBCORE_READY marker once serving begins ([#761](https://github.com/iOfficeAI/AionCore/issues/761)) ([8b08130](https://github.com/iOfficeAI/AionCore/commit/8b08130365ec7c883736c0b4aabcef471002dd7b))
 
 ## [0.1.56](https://github.com/iOfficeAI/AionCore/compare/v0.1.55...v0.1.56) (2026-07-31)
 
@@ -307,7 +307,7 @@
 
 ### Bug Fixes
 
-* **auth:** make AionUi-&gt;AionPro data adoption a one-shot event ([#716](https://github.com/iOfficeAI/AionCore/issues/716)) ([c9f6f79](https://github.com/iOfficeAI/AionCore/commit/c9f6f79fa1a15df177e15a8ff990dcb571d2fe4c))
+* **auth:** make BBUI-&gt;AionPro data adoption a one-shot event ([#716](https://github.com/iOfficeAI/AionCore/issues/716)) ([c9f6f79](https://github.com/iOfficeAI/AionCore/commit/c9f6f79fa1a15df177e15a8ff990dcb571d2fe4c))
 * **db:** pre-migration repair for migration-030 startup-blocking CHECK failures ([#724](https://github.com/iOfficeAI/AionCore/issues/724)) ([859ed7e](https://github.com/iOfficeAI/AionCore/commit/859ed7e5bdd2da5664b0f1d2df4e2b9cd92aaf3b))
 * prevent silent encryption-key rotation on migration upgrade (ELECTRON-3T0) ([#722](https://github.com/iOfficeAI/AionCore/issues/722)) ([4993fe8](https://github.com/iOfficeAI/AionCore/commit/4993fe858c531f6b2ca471ad59612d46e97d9de9))
 * **project:** add temporary fs/resolve command for preview file paths ([#723](https://github.com/iOfficeAI/AionCore/issues/723)) ([575feac](https://github.com/iOfficeAI/AionCore/commit/575feacd9e5aef7b7948a882bdb9ce27050e2829))
@@ -365,7 +365,7 @@
 
 ### Features
 
-* **project:** add project-bind foundation (db + aionui-project) ([#672](https://github.com/iOfficeAI/AionCore/issues/672)) ([70eae04](https://github.com/iOfficeAI/AionCore/commit/70eae0465259c4a4ca1db44a1a456b0040d1d24f))
+* **project:** add project-bind foundation (db + bb-project) ([#672](https://github.com/iOfficeAI/AionCore/issues/672)) ([70eae04](https://github.com/iOfficeAI/AionCore/commit/70eae0465259c4a4ca1db44a1a456b0040d1d24f))
 * **session-port:** route claude/codex through the direct-CLI SessionAgentTask ([#609](https://github.com/iOfficeAI/AionCore/issues/609)) ([14efff8](https://github.com/iOfficeAI/AionCore/commit/14efff85f192e0d1a588584fea3a870347661de7))
 * **team:** leader-only warmup with lazy teammate wakeup and per-member attach ([#670](https://github.com/iOfficeAI/AionCore/issues/670)) ([f542da8](https://github.com/iOfficeAI/AionCore/commit/f542da83bf7387dc8525df561eda9f43f2c5ac34))
 
@@ -401,7 +401,7 @@
 * **db:** prevent duplicate migration versions ([af88855](https://github.com/iOfficeAI/AionCore/commit/af88855a5e1610797689debd81755136f740cc2d))
 * **db:** prevent duplicate migration versions ([39b74ba](https://github.com/iOfficeAI/AionCore/commit/39b74ba1befeb052a673edaf9f05313c774fc1d7))
 * **provider:** preserve automatic vision detection ([08696fd](https://github.com/iOfficeAI/AionCore/commit/08696fd0b46794497c7bf70473874753a66c1925))
-* **startup:** make concurrent aioncore startup safe over one data directory ([#657](https://github.com/iOfficeAI/AionCore/issues/657)) ([2a64b55](https://github.com/iOfficeAI/AionCore/commit/2a64b55e1ab52f789dcb3a715ef0a940b35a20b3))
+* **startup:** make concurrent bbcore startup safe over one data directory ([#657](https://github.com/iOfficeAI/AionCore/issues/657)) ([2a64b55](https://github.com/iOfficeAI/AionCore/commit/2a64b55e1ab52f789dcb3a715ef0a940b35a20b3))
 
 
 ### Documentation
@@ -421,8 +421,8 @@
 
 ### Bug Fixes
 
-* **ai-agent:** ignore max token limits for aionui requests ([0121c24](https://github.com/iOfficeAI/AionCore/commit/0121c24d70f4a5a63e79ee71869aee34e6b62506))
-* **ai-agent:** ignore max token limits for aionui requests ([8bdf305](https://github.com/iOfficeAI/AionCore/commit/8bdf305e9a94d1a5aa8402424e8ef8d540eeb66c))
+* **ai-agent:** ignore max token limits for bb requests ([0121c24](https://github.com/iOfficeAI/AionCore/commit/0121c24d70f4a5a63e79ee71869aee34e6b62506))
+* **ai-agent:** ignore max token limits for bb requests ([8bdf305](https://github.com/iOfficeAI/AionCore/commit/8bdf305e9a94d1a5aa8402424e8ef8d540eeb66c))
 * **system:** apply keep-awake client preference ([#642](https://github.com/iOfficeAI/AionCore/issues/642)) ([a6a290d](https://github.com/iOfficeAI/AionCore/commit/a6a290dd374a37eca73fc008c25bd6780a0e1f54))
 * **team:** broadcast Stopped status on idle-cleanup team reclaim ([#640](https://github.com/iOfficeAI/AionCore/issues/640)) ([024a3a5](https://github.com/iOfficeAI/AionCore/commit/024a3a578936af0c59ed5aeed7bc1b4c20d990ea))
 
@@ -503,7 +503,7 @@
 ### Bug Fixes
 
 * **agent:** preserve ACP error cause detail ([#581](https://github.com/iOfficeAI/AionCore/issues/581)) ([220f682](https://github.com/iOfficeAI/AionCore/commit/220f6823c1d29fde640427cfdd77de7e981758b2))
-* **skills:** correct aionui-config butler skill drift (2026-07) ([#584](https://github.com/iOfficeAI/AionCore/issues/584)) ([e72e03f](https://github.com/iOfficeAI/AionCore/commit/e72e03ff6e1366f705352bcefec474887a85adfa))
+* **skills:** correct bb-config butler skill drift (2026-07) ([#584](https://github.com/iOfficeAI/AionCore/issues/584)) ([e72e03f](https://github.com/iOfficeAI/AionCore/commit/e72e03ff6e1366f705352bcefec474887a85adfa))
 * use provider and model protocol to determine llm request. ([37f76a8](https://github.com/iOfficeAI/AionCore/commit/37f76a8bf1ba8aafabb5dd6b6062da40173ef010))
 
 ## [0.1.43](https://github.com/iOfficeAI/AionCore/compare/v0.1.42...v0.1.43) (2026-07-06)
@@ -553,7 +553,7 @@
 * **runtime:** harden managed Node command resolution ([#565](https://github.com/iOfficeAI/AionCore/issues/565)) ([e69b83a](https://github.com/iOfficeAI/AionCore/commit/e69b83a836b369b4244a04b64f931bea1dd54743))
 * **runtime:** protect active ACP tasks from idle cleanup ([#561](https://github.com/iOfficeAI/AionCore/issues/561)) ([1fa7a54](https://github.com/iOfficeAI/AionCore/commit/1fa7a543e8fd4cec7e423443cbd6299de6a761ad))
 * **skill:** raise import size limits ([#564](https://github.com/iOfficeAI/AionCore/issues/564)) ([50d9aff](https://github.com/iOfficeAI/AionCore/commit/50d9affe53ad64e994564a31215caab428eb7094))
-* **skills:** correct AionUi Butler skill drift against current backend ([#557](https://github.com/iOfficeAI/AionCore/issues/557)) ([41c2c94](https://github.com/iOfficeAI/AionCore/commit/41c2c9426eefb2ce29de4a9f5b4e10c862a63994))
+* **skills:** correct BBUI Butler skill drift against current backend ([#557](https://github.com/iOfficeAI/AionCore/issues/557)) ([41c2c94](https://github.com/iOfficeAI/AionCore/commit/41c2c9426eefb2ce29de4a9f5b4e10c862a63994))
 
 ## [0.1.40](https://github.com/iOfficeAI/AionCore/compare/v0.1.39...v0.1.40) (2026-06-30)
 
@@ -595,7 +595,7 @@
 * **agent:** expose runtime catalogs from metadata ([#523](https://github.com/iOfficeAI/AionCore/issues/523)) ([d9c2502](https://github.com/iOfficeAI/AionCore/commit/d9c2502e499a6794476fcdbe63a14573b4fa81d0))
 * **assistant:** expose auto-inject skills and preserve assistant rules ([#525](https://github.com/iOfficeAI/AionCore/issues/525)) ([f2e91fd](https://github.com/iOfficeAI/AionCore/commit/f2e91fde95ef3a84e43fbe22d71960d64686d3b0))
 * repair invalid UTF-8 agent metadata cache fields ([#526](https://github.com/iOfficeAI/AionCore/issues/526)) ([91969cd](https://github.com/iOfficeAI/AionCore/commit/91969cd765dbecf962ba3c986eb271dfc8208c0b))
-* **skills:** sync AionUi Butler skills + rule with current backend ([#520](https://github.com/iOfficeAI/AionCore/issues/520)) ([5603b9a](https://github.com/iOfficeAI/AionCore/commit/5603b9a77857b08d99d45c02eeeeb4d6d1e1e98a))
+* **skills:** sync BBUI Butler skills + rule with current backend ([#520](https://github.com/iOfficeAI/AionCore/issues/520)) ([5603b9a](https://github.com/iOfficeAI/AionCore/commit/5603b9a77857b08d99d45c02eeeeb4d6d1e1e98a))
 
 ## [0.1.37](https://github.com/iOfficeAI/AionCore/compare/v0.1.36...v0.1.37) (2026-06-25)
 
@@ -670,8 +670,8 @@
 
 ### Features
 
-* **assistant:** add built-in AionUi self-management assistant ([#474](https://github.com/iOfficeAI/AionCore/issues/474)) ([eea941e](https://github.com/iOfficeAI/AionCore/commit/eea941e344b9dd11338393078c63bddcc532137e))
-* **assistant:** expand AionUi assistant into a butler with remote-access ([#481](https://github.com/iOfficeAI/AionCore/issues/481)) ([794c21a](https://github.com/iOfficeAI/AionCore/commit/794c21a589ef24de6f3fa03a628bb47e7958d6fe))
+* **assistant:** add built-in BBUI self-management assistant ([#474](https://github.com/iOfficeAI/AionCore/issues/474)) ([eea941e](https://github.com/iOfficeAI/AionCore/commit/eea941e344b9dd11338393078c63bddcc532137e))
+* **assistant:** expand BBUI assistant into a butler with remote-access ([#481](https://github.com/iOfficeAI/AionCore/issues/481)) ([794c21a](https://github.com/iOfficeAI/AionCore/commit/794c21a589ef24de6f3fa03a628bb47e7958d6fe))
 * enforce TeamRun ownership for agent turns ([#483](https://github.com/iOfficeAI/AionCore/issues/483)) ([4cc168a](https://github.com/iOfficeAI/AionCore/commit/4cc168a57c07879310d9e4fe8b8050735f35155a))
 * **team:** support queued team_send_message semantics ([#479](https://github.com/iOfficeAI/AionCore/issues/479)) ([a57a079](https://github.com/iOfficeAI/AionCore/commit/a57a079136cbe8a5fafa0ff4d8660bbfa28a07c5))
 
@@ -734,7 +734,7 @@
 
 * **auth:** allow same-origin framing on office preview proxy routes ([#454](https://github.com/iOfficeAI/AionCore/issues/454)) ([3543dbd](https://github.com/iOfficeAI/AionCore/commit/3543dbdc0b8ca46682b84383d2b6c4aee9bdbdd6))
 * **file:** strip Windows verbatim prefix from /api/fs/browse paths ([#453](https://github.com/iOfficeAI/AionCore/issues/453)) ([f8c3f95](https://github.com/iOfficeAI/AionCore/commit/f8c3f950f9897c4e13ae7bb1dbb7816017b86480))
-* **stt:** STT compatibility fixes for Groq Whisper and AionUI web frontend ([#400](https://github.com/iOfficeAI/AionCore/issues/400)) ([4c3fa09](https://github.com/iOfficeAI/AionCore/commit/4c3fa094087c8479d0c2975ec896ce46fb37abca))
+* **stt:** STT compatibility fixes for Groq Whisper and BBUI web frontend ([#400](https://github.com/iOfficeAI/AionCore/issues/400)) ([4c3fa09](https://github.com/iOfficeAI/AionCore/commit/4c3fa094087c8479d0c2975ec896ce46fb37abca))
 * **stt:** treat blank base_url as unset and log malformed config ([#448](https://github.com/iOfficeAI/AionCore/issues/448)) ([f6b653b](https://github.com/iOfficeAI/AionCore/commit/f6b653bbdd5822dcd1b52790f0cf28db65115011))
 
 ## [0.1.27](https://github.com/iOfficeAI/AionCore/compare/v0.1.26...v0.1.27) (2026-06-10)
@@ -857,7 +857,7 @@
 * **aionrs:** expose slash commands via get_slash_commands() ([e6e120a](https://github.com/iOfficeAI/AionCore/commit/e6e120a883c522a045360325b325a81033c9d28d))
 * **api-types:** add TeamMcpPhase enum + MCP status / teammate message payloads ([7f5767c](https://github.com/iOfficeAI/AionCore/commit/7f5767cf1dc71e6391413e62910a941838d18220))
 * **api-types:** W5-D31a TeamMcpPhase enum + MCP/teammate payloads ([5daaeea](https://github.com/iOfficeAI/AionCore/commit/5daaeeaa7306bf97b69235883786fb8e3aac5a70))
-* **app:** change database filename to aionui-backend.db ([e30f544](https://github.com/iOfficeAI/AionCore/commit/e30f5445cdcda4e2e9e3c83cd0a185bbd34bfc3e))
+* **app:** change database filename to bb-backend.db ([e30f544](https://github.com/iOfficeAI/AionCore/commit/e30f5445cdcda4e2e9e3c83cd0a185bbd34bfc3e))
 * **app:** copy legacy database before init on first run ([63b3b8c](https://github.com/iOfficeAI/AionCore/commit/63b3b8ca31cb130a8e1e84e7dc58d07652b4d523))
 * **assets:** serve logo assets from backend ([1091b4b](https://github.com/iOfficeAI/AionCore/commit/1091b4b20dad060879d00a0799e7c43c69dd2d8c))
 * **assets:** serve logo assets from backend ([78467e7](https://github.com/iOfficeAI/AionCore/commit/78467e790c02579c795882fcd1234f6db0cc84a5))
@@ -879,7 +879,7 @@
 * **conversation:** type-aware model routing + seed acp_session runtime ([#240](https://github.com/iOfficeAI/AionCore/issues/240)) ([6797d60](https://github.com/iOfficeAI/AionCore/commit/6797d600af65e289197965bf4d0dd886f58c2159))
 * **db:** add maybe_copy_legacy_database for safe upgrade path ([d2ba388](https://github.com/iOfficeAI/AionCore/commit/d2ba388809fd3ec06e597f29b81f1c1381dbd544))
 * **db:** safe database migration via copy-then-migrate ([762f8b2](https://github.com/iOfficeAI/AionCore/commit/762f8b291b94b4af8498bb76c4021cb39edd2762))
-* **extension:** align backend discovery with existing AionUi contract ([23a45ff](https://github.com/iOfficeAI/AionCore/commit/23a45ff8bceaefe09aead9868c4a9e8dcd62b1c9))
+* **extension:** align backend discovery with existing BBUI contract ([23a45ff](https://github.com/iOfficeAI/AionCore/commit/23a45ff8bceaefe09aead9868c4a9e8dcd62b1c9))
 * **extension:** align backend discovery with existing contract ([7837d5a](https://github.com/iOfficeAI/AionCore/commit/7837d5af19a2ec5695183ce1aca05702a8e1fc24))
 * **extension:** bootstrap backend-served settings assets ([42849ef](https://github.com/iOfficeAI/AionCore/commit/42849ef50ea074dd73c919e090967cbb7366cff3))
 * **file:** add GET /api/fs/browse shallow host-file picker ([#235](https://github.com/iOfficeAI/AionCore/issues/235)) ([1034d22](https://github.com/iOfficeAI/AionCore/commit/1034d22083df2b5c17fb430e610db8ea3f807347))
@@ -904,8 +904,8 @@
 * **team:** add resolve_full_auto_mode helper for dynamic permission mode ([dbf791d](https://github.com/iOfficeAI/AionCore/commit/dbf791d59546e6cc4ad492a3e9cc1decd220d8b3))
 * **team:** add SpawnAgentRequest type and spawn_agent method skeleton ([9233b8e](https://github.com/iOfficeAI/AionCore/commit/9233b8eb61a148f875c1767e95e589a0fda21696))
 * **team:** add structured logging to MCP server lifecycle ([86cb6b9](https://github.com/iOfficeAI/AionCore/commit/86cb6b91adb2a4652fcd1bd8d5afc9d6ba823dd1))
-* **team:** align lead prompt with AionUi leadPrompt.ts ([a62104f](https://github.com/iOfficeAI/AionCore/commit/a62104fd4b4141a8bba087fbf4e92b3f3927380a))
-* **team:** align lead prompt with AionUi leadPrompt.ts ([65e630e](https://github.com/iOfficeAI/AionCore/commit/65e630e1371ce4973db8d942ac2edb3e892981e4))
+* **team:** align lead prompt with BBUI leadPrompt.ts ([a62104f](https://github.com/iOfficeAI/AionCore/commit/a62104fd4b4141a8bba087fbf4e92b3f3927380a))
+* **team:** align lead prompt with BBUI leadPrompt.ts ([65e630e](https://github.com/iOfficeAI/AionCore/commit/65e630e1371ce4973db8d942ac2edb3e892981e4))
 * **team:** broadcast team.mcpStatus on TCP bind (W5-D31b-1) ([48083de](https://github.com/iOfficeAI/AionCore/commit/48083dedca6d6c4a3494e756370b41f45fdbaec5))
 * **team:** broadcast team.mcpStatus on TCP bind (W5-D31b-1) ([4b00dd9](https://github.com/iOfficeAI/AionCore/commit/4b00dd96dfa17acdac888cbd217863a2d679f2a3))
 * **team:** clear scheduler state on remove_agent (W5-D30d-2) ([29039b0](https://github.com/iOfficeAI/AionCore/commit/29039b0a56b661a23834b570506b2d1cd108ec1e))
@@ -979,8 +979,8 @@
 * **aionrs:** preserve tool call correlation across aborts ([#335](https://github.com/iOfficeAI/AionCore/issues/335)) ([d65c8ed](https://github.com/iOfficeAI/AionCore/commit/d65c8ed49be4a558aff99e907e359264d6729d1c))
 * **aionrs:** reset runtime status on new turn to unblock StreamRelay ([2820ecf](https://github.com/iOfficeAI/AionCore/commit/2820ecf9a1a0f81b51f26c05c0d841da7a9b5e64))
 * **aionrs:** second message stuck in processing state ([6181083](https://github.com/iOfficeAI/AionCore/commit/61810831ec89228188d8a7268f98f6078ff90442))
-* **aionui-ai-agent:** classify aionrs API connection errors ([#389](https://github.com/iOfficeAI/AionCore/issues/389)) ([c3f16f7](https://github.com/iOfficeAI/AionCore/commit/c3f16f7453d061d0865cb7c61eca183a6d6e797f))
-* **aionui-ai-agent:** strip HTML body from sanitized error detail (AIO-13) ([#380](https://github.com/iOfficeAI/AionCore/issues/380)) ([9fc5d8c](https://github.com/iOfficeAI/AionCore/commit/9fc5d8c088c644f771457bf50658ac7c6e98c1dc))
+* **bb-ai-agent:** classify aionrs API connection errors ([#389](https://github.com/iOfficeAI/AionCore/issues/389)) ([c3f16f7](https://github.com/iOfficeAI/AionCore/commit/c3f16f7453d061d0865cb7c61eca183a6d6e797f))
+* **bb-ai-agent:** strip HTML body from sanitized error detail (AIO-13) ([#380](https://github.com/iOfficeAI/AionCore/issues/380)) ([9fc5d8c](https://github.com/iOfficeAI/AionCore/commit/9fc5d8c088c644f771457bf50658ac7c6e98c1dc))
 * align test request bodies with snake_case wire format ([187410f](https://github.com/iOfficeAI/AionCore/commit/187410fc551783b09729649513b486f78ea90240))
 * **app:** bind backend before startup services ([#397](https://github.com/iOfficeAI/AionCore/issues/397)) ([1ae944c](https://github.com/iOfficeAI/AionCore/commit/1ae944cb4239e898f910118885df9dfa793aec54))
 * **app:** update database_path test assertion to match new filename ([4bf0fc8](https://github.com/iOfficeAI/AionCore/commit/4bf0fc879f4d90018cada429efc067c65afd6b93))
@@ -1020,7 +1020,7 @@
 * **ci:** only run security audit when dependencies change ([135b307](https://github.com/iOfficeAI/AionCore/commit/135b3073c337d5f8fb16f3be64b92b7b980b6633))
 * **ci:** remove openssl-sys dependency via git2 default-features ([5753a5a](https://github.com/iOfficeAI/AionCore/commit/5753a5ab8b0821cfce85ba4e8700aa140080486c))
 * **ci:** remove openssl-sys dependency via git2 default-features ([e921a9b](https://github.com/iOfficeAI/AionCore/commit/e921a9bffae1197ac05b02bfda9b4002e2bae2e6))
-* **ci:** resolve clippy warnings in aionui-api-types and aionui-realtime ([7b8c1c8](https://github.com/iOfficeAI/AionCore/commit/7b8c1c82976284b149195ae67707a1d62bf01f0f))
+* **ci:** resolve clippy warnings in bb-api-types and bb-realtime ([7b8c1c8](https://github.com/iOfficeAI/AionCore/commit/7b8c1c82976284b149195ae67707a1d62bf01f0f))
 * **ci:** resolve SSH permission and audit blocking issues ([f4f5cab](https://github.com/iOfficeAI/AionCore/commit/f4f5cabe29a210941897cdd1f79dffda81d45afa))
 * **ci:** switch aionrs dependency from SSH to HTTPS URL ([05f0d1b](https://github.com/iOfficeAI/AionCore/commit/05f0d1bb51895cc68302ec89d0ae9193babc50ff))
 * **ci:** switch TLS backend from native-tls to rustls ([9f42a3a](https://github.com/iOfficeAI/AionCore/commit/9f42a3a609c8204f9dc4bda2a43d2ba6e85f6e84))
@@ -1145,9 +1145,9 @@
 * **ai-agent:** introduce AgentService as sole business layer (Stage 2) ([#171](https://github.com/iOfficeAI/AionCore/issues/171)) ([0ca0ebc](https://github.com/iOfficeAI/AionCore/commit/0ca0ebcf1000de25fda058f6e740a50f7b4f3673))
 * **ai-agent:** merge acp_service into acp_agent_service ([#141](https://github.com/iOfficeAI/AionCore/issues/141)) ([9da6076](https://github.com/iOfficeAI/AionCore/commit/9da6076896f3187fb675226327ca5b53c1da5a74))
 * **ai-agent:** migrate permission producers to AcpPermission (B3) ([#174](https://github.com/iOfficeAI/AionCore/issues/174)) ([b7541b9](https://github.com/iOfficeAI/AionCore/commit/b7541b9766758f9cb62b1ff34e3d77053d4dccb7))
-* **ai-agent:** move BuildExtra types to aionui-api-types ([#148](https://github.com/iOfficeAI/AionCore/issues/148)) ([a00131e](https://github.com/iOfficeAI/AionCore/commit/a00131e2e76bfee0219da1ad495edc7bca10cf8e))
-* **ai-agent:** move connection_test to aionui-system ([#146](https://github.com/iOfficeAI/AionCore/issues/146)) ([87ae85a](https://github.com/iOfficeAI/AionCore/commit/87ae85a23445f7cd05aae5703db81346cc43c2cc))
-* **ai-agent:** move middleware.rs to aionui-conversation ([#145](https://github.com/iOfficeAI/AionCore/issues/145)) ([bdbc2ba](https://github.com/iOfficeAI/AionCore/commit/bdbc2ba09b02690c51e167101143616819467141))
+* **ai-agent:** move BuildExtra types to bb-api-types ([#148](https://github.com/iOfficeAI/AionCore/issues/148)) ([a00131e](https://github.com/iOfficeAI/AionCore/commit/a00131e2e76bfee0219da1ad495edc7bca10cf8e))
+* **ai-agent:** move connection_test to bb-system ([#146](https://github.com/iOfficeAI/AionCore/issues/146)) ([87ae85a](https://github.com/iOfficeAI/AionCore/commit/87ae85a23445f7cd05aae5703db81346cc43c2cc))
+* **ai-agent:** move middleware.rs to bb-conversation ([#145](https://github.com/iOfficeAI/AionCore/issues/145)) ([bdbc2ba](https://github.com/iOfficeAI/AionCore/commit/bdbc2ba09b02690c51e167101143616819467141))
 * **ai-agent:** move remote_agent files to manager/remote/ ([#147](https://github.com/iOfficeAI/AionCore/issues/147)) ([4861953](https://github.com/iOfficeAI/AionCore/commit/48619536915411581208449f7080f19d2286fddf))
 * **ai-agent:** narrow capability module to pub(crate) (batch 3) ([c3039d9](https://github.com/iOfficeAI/AionCore/commit/c3039d9b7365a0e5e5641e91409e8ae0a42aa62b))
 * **ai-agent:** narrow capability module visibility to pub(crate) (batch 3) ([28e87c3](https://github.com/iOfficeAI/AionCore/commit/28e87c30bef4071e05bce60305a693cde12e4c67))
@@ -1184,13 +1184,13 @@
 * **db:** absorb 014_behavior_policy_supports_team into 001 seed data ([#234](https://github.com/iOfficeAI/AionCore/issues/234)) ([c8e584b](https://github.com/iOfficeAI/AionCore/commit/c8e584b55e5921cfe5524495508aff3aae37d3cc))
 * **db:** consolidate migrations + fix aionrs session resume ([#233](https://github.com/iOfficeAI/AionCore/issues/233)) ([1ebb78a](https://github.com/iOfficeAI/AionCore/commit/1ebb78afa7177e9a8919d329cfe205b93c096804))
 * **db:** expand MessageSearchRow to include full conversation fields ([3d07d46](https://github.com/iOfficeAI/AionCore/commit/3d07d466d8e1692aa3527544ee8b3598551b2c9c))
-* **docs:** move team docs from docs/teams/ to crates/aionui-team/docs/ ([ac49870](https://github.com/iOfficeAI/AionCore/commit/ac49870cf863a780cc9f201b389668317d58e6bc))
+* **docs:** move team docs from docs/teams/ to crates/bb-team/docs/ ([ac49870](https://github.com/iOfficeAI/AionCore/commit/ac49870cf863a780cc9f201b389668317d58e6bc))
 * **error:** migrate phase2 service errors ([#395](https://github.com/iOfficeAI/AionCore/issues/395)) ([c6c42ee](https://github.com/iOfficeAI/AionCore/commit/c6c42eea051083c94eb822163149de6fef2387a3))
 * four-layer architecture (connect / conv / biz) ([#349](https://github.com/iOfficeAI/AionCore/issues/349)) ([2a11285](https://github.com/iOfficeAI/AionCore/commit/2a11285e316ffc7f0076d385dad8e09a4af2de4b))
 * **guide-server:** remove async send_message to leader, return actionable tool result ([06dc20f](https://github.com/iOfficeAI/AionCore/commit/06dc20ff087c79800199e9bc449b42865c135fdf))
-* rename binary from aioncli to aioncore ([#293](https://github.com/iOfficeAI/AionCore/issues/293)) ([ae78cd1](https://github.com/iOfficeAI/AionCore/commit/ae78cd19f599fb3c8845ba5d3e208a75bf310368))
-* rename binary from aionui-backend to aioncli ([#289](https://github.com/iOfficeAI/AionCore/issues/289)) ([30eeca3](https://github.com/iOfficeAI/AionCore/commit/30eeca37661441ba9474aa7dc51ca911abda0bfb))
-* roll out aionui_runtime::Builder to office/extension/shell ([#196](https://github.com/iOfficeAI/AionCore/issues/196)) ([18f10c3](https://github.com/iOfficeAI/AionCore/commit/18f10c325b87567e3c8dbf13cde39c4787a4a501))
+* rename binary from aioncli to bbcore ([#293](https://github.com/iOfficeAI/AionCore/issues/293)) ([ae78cd1](https://github.com/iOfficeAI/AionCore/commit/ae78cd19f599fb3c8845ba5d3e208a75bf310368))
+* rename binary from bb-backend to aioncli ([#289](https://github.com/iOfficeAI/AionCore/issues/289)) ([30eeca3](https://github.com/iOfficeAI/AionCore/commit/30eeca37661441ba9474aa7dc51ca911abda0bfb))
+* roll out bb_runtime::Builder to office/extension/shell ([#196](https://github.com/iOfficeAI/AionCore/issues/196)) ([18f10c3](https://github.com/iOfficeAI/AionCore/commit/18f10c325b87567e3c8dbf13cde39c4787a4a501))
 * **team:** pull-based event loop for agent lifecycle ([de891f6](https://github.com/iOfficeAI/AionCore/commit/de891f6038dd4037b2575b09f24d22aac899b087))
 * **team:** replace push-based finish_subscribers with pull-based event loop ([3a05785](https://github.com/iOfficeAI/AionCore/commit/3a05785771632d3510d1830f49c47357d065122e))
 * **team:** split scheduler.rs into submodule directory ([b0a84ad](https://github.com/iOfficeAI/AionCore/commit/b0a84ad06250155ca06f0afbc35cc245ce8d5a03))
@@ -1201,7 +1201,7 @@
 
 * add test scope requirements for happy path, bad path, security, and WebSocket events ([f00e9d4](https://github.com/iOfficeAI/AionCore/commit/f00e9d4c0e3fbc7f3bf5d7daf4000f716db42030))
 * **assistants:** add word-form-creator to preset-id-whitelist ([#252](https://github.com/iOfficeAI/AionCore/issues/252)) ([343b15b](https://github.com/iOfficeAI/AionCore/commit/343b15bc5ab362c566ae0d8e2ed61921d58b9497))
-* catch up with aionui-backend → AionCore rename ([#301](https://github.com/iOfficeAI/AionCore/issues/301)) ([40a7e83](https://github.com/iOfficeAI/AionCore/commit/40a7e83618bb62b145378e333e26b66dc0061c89))
+* catch up with bb-backend → BBCore rename ([#301](https://github.com/iOfficeAI/AionCore/issues/301)) ([40a7e83](https://github.com/iOfficeAI/AionCore/commit/40a7e83618bb62b145378e333e26b66dc0061c89))
 * clean up AGENTS.md and sync ARCHITECTURE.md ([a6d1efa](https://github.com/iOfficeAI/AionCore/commit/a6d1efaf3d8167f1cb7987249938768410b9f1be))
 * **team:** add phase2 bugfix status doc for handoff ([5aaf860](https://github.com/iOfficeAI/AionCore/commit/5aaf8601eee8b27bbfe8fc8d78563b06aa45c998))
 * **teams:** clarify ensureSession timing (page-enter only, not on create) ([98783ce](https://github.com/iOfficeAI/AionCore/commit/98783cef6c0ab747d7c606b55ca341f06ad6bf40))
@@ -1213,7 +1213,7 @@
 
 ### Bug Fixes
 
-* **aionui-ai-agent:** classify aionrs API connection errors ([#389](https://github.com/iOfficeAI/AionCore/issues/389)) ([c3f16f7](https://github.com/iOfficeAI/AionCore/commit/c3f16f7453d061d0865cb7c61eca183a6d6e797f))
+* **bb-ai-agent:** classify aionrs API connection errors ([#389](https://github.com/iOfficeAI/AionCore/issues/389)) ([c3f16f7](https://github.com/iOfficeAI/AionCore/commit/c3f16f7453d061d0865cb7c61eca183a6d6e797f))
 * classify missing MCP launcher runtimes ([#387](https://github.com/iOfficeAI/AionCore/issues/387)) ([fd8c20c](https://github.com/iOfficeAI/AionCore/commit/fd8c20cc0f6f36805cf5acc1fee3c708296d661a))
 * enforce workspace path whitespace errors across create and runtime ([#381](https://github.com/iOfficeAI/AionCore/issues/381)) ([9448a36](https://github.com/iOfficeAI/AionCore/commit/9448a36cec456648bd87a680e9dc84083038a63a))
 * **startup:** add startup phase diagnostics ([#388](https://github.com/iOfficeAI/AionCore/issues/388)) ([d24d027](https://github.com/iOfficeAI/AionCore/commit/d24d02726e03b852c8ee87caa872ed1605509143))
@@ -1226,7 +1226,7 @@
 * **agent:** classify Bedrock 'model identifier is invalid' as model-not-found (AIO-12) ([#377](https://github.com/iOfficeAI/AionCore/issues/377)) ([07dc3ac](https://github.com/iOfficeAI/AionCore/commit/07dc3ac8b2fae8962e8a7e31a223875669e11ba1))
 * **agent:** preserve process-group cleanup after leader exit ([#369](https://github.com/iOfficeAI/AionCore/issues/369)) ([73d4fb4](https://github.com/iOfficeAI/AionCore/commit/73d4fb4f4e4647352ba3dcac07e4a6b277e46c7b))
 * **agent:** tighten send_error classifier (AIO-87, AIO-89, AIO-90) ([#375](https://github.com/iOfficeAI/AionCore/issues/375)) ([d9a2f76](https://github.com/iOfficeAI/AionCore/commit/d9a2f763d14ec642c09f3aef5a2d8b716f4b0648))
-* **aionui-ai-agent:** strip HTML body from sanitized error detail (AIO-13) ([#380](https://github.com/iOfficeAI/AionCore/issues/380)) ([9fc5d8c](https://github.com/iOfficeAI/AionCore/commit/9fc5d8c088c644f771457bf50658ac7c6e98c1dc))
+* **bb-ai-agent:** strip HTML body from sanitized error detail (AIO-13) ([#380](https://github.com/iOfficeAI/AionCore/issues/380)) ([9fc5d8c](https://github.com/iOfficeAI/AionCore/commit/9fc5d8c088c644f771457bf50658ac7c6e98c1dc))
 * recover deleted conversation workspaces ([#379](https://github.com/iOfficeAI/AionCore/issues/379)) ([759afb8](https://github.com/iOfficeAI/AionCore/commit/759afb88ed404a055abd686c427e5805161b812b))
 
 ## [0.1.17](https://github.com/iOfficeAI/AionCore/compare/v0.1.16...v0.1.17) (2026-05-30)
@@ -1349,7 +1349,7 @@
 
 ### Documentation
 
-* catch up with aionui-backend → AionCore rename ([#301](https://github.com/iOfficeAI/AionCore/issues/301)) ([40a7e83](https://github.com/iOfficeAI/AionCore/commit/40a7e83618bb62b145378e333e26b66dc0061c89))
+* catch up with bb-backend → BBCore rename ([#301](https://github.com/iOfficeAI/AionCore/issues/301)) ([40a7e83](https://github.com/iOfficeAI/AionCore/commit/40a7e83618bb62b145378e333e26b66dc0061c89))
 
 ## [0.1.5](https://github.com/iOfficeAI/AionCore/compare/v0.1.4...v0.1.5) (2026-05-19)
 
@@ -1366,7 +1366,7 @@
 
 ### Code Refactoring
 
-* rename binary from aioncli to aioncore ([#293](https://github.com/iOfficeAI/AionCore/issues/293)) ([ae78cd1](https://github.com/iOfficeAI/AionCore/commit/ae78cd19f599fb3c8845ba5d3e208a75bf310368))
+* rename binary from aioncli to bbcore ([#293](https://github.com/iOfficeAI/AionCore/issues/293)) ([ae78cd1](https://github.com/iOfficeAI/AionCore/commit/ae78cd19f599fb3c8845ba5d3e208a75bf310368))
 
 ## [0.1.4](https://github.com/iOfficeAI/AionCLI/compare/v0.1.3...v0.1.4) (2026-05-16)
 
@@ -1394,7 +1394,7 @@
 * **app:** introduce commands/ module with layered bootstrap for subcommands ([#283](https://github.com/iOfficeAI/AionCLI/issues/283)) ([1216597](https://github.com/iOfficeAI/AionCLI/commit/12165971cfae61d85376c102ef9f9afc5a7c5bbf))
 * **app:** replace argv sniffing with clap Subcommand for mcp-* helpers ([#277](https://github.com/iOfficeAI/AionCLI/issues/277)) ([c3d137c](https://github.com/iOfficeAI/AionCLI/commit/c3d137c9e5fdcb12e29d5ca7abd6a0585bbc6c8d))
 * **app:** split monolithic lib.rs/main.rs into per-module files ([#284](https://github.com/iOfficeAI/AionCLI/issues/284)) ([f3462cb](https://github.com/iOfficeAI/AionCLI/commit/f3462cbb1d6d830a3a368a76b2d9ea6424f21b64))
-* rename binary from aionui-backend to aioncli ([#289](https://github.com/iOfficeAI/AionCLI/issues/289)) ([30eeca3](https://github.com/iOfficeAI/AionCLI/commit/30eeca37661441ba9474aa7dc51ca911abda0bfb))
+* rename binary from bb-backend to aioncli ([#289](https://github.com/iOfficeAI/AionCLI/issues/289)) ([30eeca3](https://github.com/iOfficeAI/AionCLI/commit/30eeca37661441ba9474aa7dc51ca911abda0bfb))
 
 ## [0.1.3](https://github.com/iOfficeAI/aionui-backend/compare/v0.1.2...v0.1.3) (2026-05-15)
 
@@ -1426,7 +1426,7 @@
 * **ci:** allow too_many_arguments on JobExecutor::new ([26918a0](https://github.com/iOfficeAI/aionui-backend/commit/26918a04b265a73298e216bda504b79bd47c852a))
 * **ci:** auto-update Cargo.lock in release-please PR ([a3d6147](https://github.com/iOfficeAI/aionui-backend/commit/a3d614713cf0999f2471472dcfa6a8af4f9c0b8f))
 * **ci:** auto-update Cargo.lock in release-please PR ([91f4495](https://github.com/iOfficeAI/aionui-backend/commit/91f44956ed24c8cb370d4ea71d9f62cd29e09fe7))
-* **ci:** resolve clippy warnings in aionui-api-types and aionui-realtime ([7b8c1c8](https://github.com/iOfficeAI/aionui-backend/commit/7b8c1c82976284b149195ae67707a1d62bf01f0f))
+* **ci:** resolve clippy warnings in bb-api-types and bb-realtime ([7b8c1c8](https://github.com/iOfficeAI/aionui-backend/commit/7b8c1c82976284b149195ae67707a1d62bf01f0f))
 * **conversation:** kill agent process on conversation delete ([#267](https://github.com/iOfficeAI/aionui-backend/issues/267)) ([456ff32](https://github.com/iOfficeAI/aionui-backend/commit/456ff322845b96fd70583dcf1fc2fb12c2371030))
 * **runtime:** include nvm node bins in startup path ([#261](https://github.com/iOfficeAI/aionui-backend/issues/261)) ([00c5762](https://github.com/iOfficeAI/aionui-backend/commit/00c57627592a567eb71fbc4edc564e2b579b86ee))
 

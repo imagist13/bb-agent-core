@@ -7,7 +7,7 @@ footer_script="$script_dir/aionrs-changelog-footer.sh"
 
 aionrs_repo="https://github.com/iOfficeAI/aionrs.git"
 aionrs_slug="iOfficeAI/aionrs"
-aioncore_slug="iOfficeAI/AionCore"
+bbcore_slug="iOfficeAI/AionCore"
 
 fail() { echo "error: $*" >&2; exit 1; }
 
@@ -107,7 +107,7 @@ fi
 # remotes exist (e.g. origin + a contributor fork) unless one was configured
 # via 'gh repo set-default'.
 if ! gh pr create \
-    --repo "$aioncore_slug" \
+    --repo "$bbcore_slug" \
     --title "chore(deps): update aionrs to $tag" \
     --body "$pr_body" \
     --base main \
