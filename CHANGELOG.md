@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/imagist13/bb-agent-core/compare/v0.2.2...v0.2.3) (2026-10-30)
+
+
+### Code Refactoring
+
+* reshape bb-agent-core into the buckyball vertical agent ([d436051](https://github.com/imagist13/bb-agent-core/commit/d43605137fa6f7fe3aae6682e82ccb64137d39f1))
+
 ## [0.2.2](https://github.com/iOfficeAI/AionCore/compare/v0.2.1...v0.2.2) (2026-09-09)
 
 
